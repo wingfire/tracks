@@ -10,12 +10,27 @@ module NavigationHelpers
 
     when /the home\s?page/
       '/'
-
-    # Add more mappings here.
-    # Here is an example that pulls values out of the Regexp:
-    #
-    #   when /^(.*)'s profile page$/i
-    #     user_profile_path(User.find_by_login($1))
+    when /the statistics page/
+      stats_path
+    when /the signup page/
+      signup_path
+    when /the login page/
+      login_path
+    when /the notes page/
+      notes_path
+    when /the contexts page/
+      contexts_path
+    when /the manage users page/
+      users_path
+    when /the repeating todos page/
+      recurring_todos_path
+    when /the integrations page/
+      integrations_path
+      # Add more mappings here.
+      # Here is an example that pulls values out of the Regexp:
+      #
+      #   when /^(.*)'s profile page$/i
+      #     user_profile_path(User.find_by_login($1))
 
     else
       begin
