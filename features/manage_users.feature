@@ -16,6 +16,7 @@ Feature: Manage users
     Then I should see "testuser"
     And I should see "admin"
 
+  @selenium
   Scenario: Add new account
     When I go to the manage users page
     And I follow "Signup new user"

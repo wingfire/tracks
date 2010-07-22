@@ -17,9 +17,9 @@ Feature: Existing user logging in
     And I should see "<message>"
 
     Examples:
-    | user  | password | there                       | message            |
-    | admin | secret   | redirected to the home page | Login successful   |
-    | admin | wrong    | on the login page           | Login unsuccessful |
+    | user  | password | there                       | message               |
+    | admin | secret   | redirected to the home page | Logged in successfully|
+    | admin | wrong    | on the login page           | Login unsuccessful    |
 
   Scenario: Accessing a secured page when not logged in
     When I go to the home page

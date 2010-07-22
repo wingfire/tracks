@@ -6,7 +6,7 @@ Given /^I have logged in as "(.*)" with password "(.*)"$/ do |username, password
   if response.respond_to? :selenium
     selenium.wait_for_page_to_load(5000)
   end
-  response.should contain(/Login successful/)
+  response.should contain(/Logged in successfully/)
   @current_user = User.find_by_login(username)
 end
 

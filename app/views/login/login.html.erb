@@ -96,7 +96,10 @@ function showPreferredAuth() {
 	}
 	else if (preferredAuth && preferredAuth == 'cas' && casEnabled)  {
 	  Login.showCAS();
-	}
+	} else {
+          <% # revert to database as fallback -%>
+          Login.showDatabase();
+        }
 }
 $(document).ready(showPreferredAuth);
 
