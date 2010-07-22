@@ -39,7 +39,7 @@ config.gem "flexmock"
 config.gem "ZenTest", :lib => "zentest", :version => ">=4.0.0"
 config.gem "hpricot"
 config.gem "hoe"
-config.gem "rspec", :lib => false, :version => ">= 1.2.2"
-config.gem "rspec-rails", :lib => false, :version => ">=1.2.2"
-config.gem "webrat", :lib => false, :version => ">=0.4.3"
+config.gem 'webrat',           :lib => false, :version => '>=0.7.0' unless File.directory?(File.join(Rails.root, 'vendor/plugins/webrat'))
+config.gem 'rspec',            :lib => false, :version => '>=1.3.0' unless File.directory?(File.join(Rails.root, 'vendor/plugins/rspec'))
+config.gem 'rspec-rails',      :lib => false, :version => '>=1.3.2' unless File.directory?(File.join(Rails.root, 'vendor/plugins/rspec-rails'))
 config.gem "thoughtbot-factory_girl", :lib => "factory_girl", :source => "http://gems.github.com"

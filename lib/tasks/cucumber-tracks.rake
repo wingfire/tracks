@@ -11,10 +11,13 @@ begin
   require 'cucumber/rake/task'
 
   namespace :cucumber do
-    Cucumber::Rake::Task.new({:selenium => 'db:test:prepare'}, 'Run features that require selenium') do |t|
+    Cucumber::Rake::Task.new({:selenium => :env_to_selenium}, 'Run features that require selenium') do |t|
       t.binary = vendored_cucumber_bin
       t.fork = true # You may get faster startup if you set this to false
       t.profile = 'selenium'
+    end
+
+    task :env_to_selenium => 'db:test:prepare' do
       ENV['RAILS_ENV'] = 'selenium'
     end
 
