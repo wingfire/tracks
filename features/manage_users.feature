@@ -16,14 +16,11 @@ Feature: Manage users
     Then I should see "testuser"
     And I should see "admin"
 
-  @selenium
   Scenario: Add new account
     When I go to the manage users page
     And I follow "Signup new user"
-    And I wait a second
     Then I should be on the signup page
     When I submit the signup form with username "new.user", password "secret123" and confirm with "secret123"
-    And I wait a second
     Then I should be on the manage users page
     And I should see "new.user"
 
