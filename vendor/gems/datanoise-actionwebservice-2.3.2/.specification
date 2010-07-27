@@ -1,6 +1,11 @@
 --- !ruby/object:Gem::Specification 
 name: datanoise-actionwebservice
 version: !ruby/object:Gem::Version 
+  hash: 7
+  segments: 
+  - 2
+  - 3
+  - 2
   version: 2.3.2
 platform: ruby
 authors: 
@@ -9,29 +14,41 @@ autorequire:
 bindir: bin
 cert_chain: []
 
-date: 2009-03-29 00:00:00 -04:00
+date: 2009-03-29 06:00:00 +02:00
 default_executable: 
 dependencies: 
 - !ruby/object:Gem::Dependency 
   name: actionpack
-  type: :runtime
-  version_requirement: 
-  version_requirements: !ruby/object:Gem::Requirement 
+  requirement: &id001 !ruby/object:Gem::Requirement 
     requirements: 
     - - "="
       - !ruby/object:Gem::Version 
+        hash: 7
+        segments: 
+        - 2
+        - 3
+        - 2
         version: 2.3.2
     version: 
+  type: :runtime
+  version_requirement: 
+  version_requirements: *id001
 - !ruby/object:Gem::Dependency 
   name: activerecord
-  type: :runtime
-  version_requirement: 
-  version_requirements: !ruby/object:Gem::Requirement 
+  requirement: &id002 !ruby/object:Gem::Requirement 
     requirements: 
     - - "="
       - !ruby/object:Gem::Version 
+        hash: 7
+        segments: 
+        - 2
+        - 3
+        - 2
         version: 2.3.2
     version: 
+  type: :runtime
+  version_requirement: 
+  version_requirements: *id002
 description: Adds WSDL/SOAP and XML-RPC web service support to Action Pack
 email: bitserf@gmail.com, ksibilev@yahoo.com
 executables: []
@@ -153,18 +170,24 @@ required_ruby_version: !ruby/object:Gem::Requirement
   requirements: 
   - - ">="
     - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
       version: "0"
   version: 
 required_rubygems_version: !ruby/object:Gem::Requirement 
   requirements: 
   - - ">="
     - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
       version: "0"
   version: 
 requirements: 
 - none
 rubyforge_project: aws
-rubygems_version: 1.3.5
+rubygems_version: 1.3.7
 signing_key: 
 specification_version: 2
 summary: Web service support for Action Pack.
