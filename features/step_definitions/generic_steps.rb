@@ -1,3 +1,8 @@
+When /^I wait a second$/ do
+  sleep(1)
+end
+
+
 Then /the badge should show (.*)/ do |number|
   # puts response.body.inspect
   badge = -1
